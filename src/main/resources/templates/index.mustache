@@ -7,10 +7,11 @@
                 <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
                 {{#your_name}}
                     Logged in as : <span id="user">{{your_name}}</span>
-                <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+                    <a href="/logout" class="btn btn-info active" role="button">Logout</a>
                 {{/your_name}}
                 {{^your_name}}
                     <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                    <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
                 {{/your_name}}
             </div>
         </div>
